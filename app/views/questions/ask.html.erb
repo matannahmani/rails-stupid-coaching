@@ -1,0 +1,9 @@
+<div class="banner">
+<h1>Questions#ask</h1>
+</div>
+<form action="/ask" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <label>Ask your coach anything:</label>
+  <input type="text" name="answer" placeholder="Whats your answer?">
+  <input type="submit">
+</form>
